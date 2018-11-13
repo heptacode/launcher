@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+<title>LAUNCHER | WEB ASSIGNMENT</title>
+<script src="/cdn-cgi/apps/head/dYYmHu72ztP7j4-sjoz1LFy99Go.js"></script><link rel="stylesheet" href="https://cdn.hyunwoo.org/css/bootstrap.min.css">
+<script src="https://cdn.hyunwoo.org/js/bootstrap.min.js"></script>
+<style>
+        html, body {
+
+            color: white;
+        }
+        .tile {
+            border: .5px solid rgba(0,0,0,.1);
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,.1);
+            width: 130px;
+            height: 130px;
+            margin: 30px;
+            cursor: pointer;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+        }
+        .tile:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,.3);
+            opacity: .7;
+        }
+        .tile-naver {
+            background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/3393f738210507.575900b317fb4.png') no-repeat center;
+            background-size: cover;
+        }
+        .tile-google {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png') no-repeat center;
+            background-size: cover;
+        }
+        .tile-sunrin {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SunrinInternetHighSchool.png/1280px-SunrinInternetHighSchool.png') no-repeat center;
+            background-size: cover;
+        }
+        .tile-youtube {
+            background: url('https://s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png') no-repeat center;
+            background-size: cover;
+        }
+        .tile-facebook {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5doerLr7fTHzeE9WKHV2umHlcDy9Pnd4eyut9O1vtdZbat5ibmWoceGk7/M0eSrs9G/xtxMY6ZvgLVIYaWJ8OFBAAAC40lEQVR4nO3c63KqMBRAYU9iqaLg/d7W2vd/yE5nzt/ihjTsvTNrPQDDNxIDJDqZEBERERERERERERERERFZL4QYqydF7ZMcXKyadju97m/zzhZ7n8SqCY/T8Z+kXa19sv2LdbztRLqflu6EsXm8i3kOhbF9WffxeROG9tHT50xYbTd9fb6E7Vt/nydhqO9DgH6EcdZ7BPoSVpdhPjfCajUU6EQYhwN9COPncKALYdgeChe2socIv8LmnAJ0IIzXJKADYZMyCD0IE69R+8Iw+F7Gi7CVv67wKQzTVKB1YbMsXBhSbtdcCOtT6cLUudC8MD7SgbaFdepsb17YDHw140YYZn8ANC2M+78QWl57qvoMw8PuvHC3fljL70k3q7qu/a0Bt9LZ8HhpgvbJDioKgffWp28SvqRA7TMdmvDJ6egWKBV+Ob1EJ1LhyfB09yyZ0PFHKBMeG+3TTEgkPFXap5mQSGj5nuxpIuELQsshRGg/hAjthxCh/RAitB9ChPZDiNB+CBHarwxh6PiJci3ZWnptnv3SWRm4ev2920IgPN86jvDTfKsqrD4EiMR0V98qyceU1kF3iXgEofLy2wjCe/FX6Yful+kIwn3xwpXuOv8Iws/ihcr3NPmFa+UdU/mFS+XdKPmFZ+UtU/mFr8WPQ+3nx/zCi/K2t/xC7VcA2YUH7b2Z2YXqWxezCzfFf4bqmzOzC2/Ff9M8ihdqT4f5hdrDMLtQ+VXiCEL93x7mFiq/ShxBOC9+HL5pTxbZhVPtySK7UNuXXXhQH4a5hWvtZ6fswnf1ySL3GvBZ/yqdbGcdSf4O8q3rCLpL+P8LvxdFu02qjiNo455Vxn6arhAitB9ChPZDiNB+CBHaDyFC+yFEaD+ECO2HEKH9ECK0H0KE9kOI0H4IEdoPIUL7IURoP4QI7YcQof0QIrQfQoT2Q4jQfggR2g8hQvshRGg/hAjthxCh/RAitB9ChPZDiNB+CBH26BsaQkVVLImVewAAAABJRU5ErkJggg==') no-repeat center;
+            background-size: cover;
+        }
+        .tile-instagram {
+            background: url('https://www.instagram.com/static/images/ico/apple-touch-icon-180x180-precomposed.png/85a358fb3b7d.png') no-repeat center;
+            background-size: cover;
+        }
+        .tile-sunringoorm {
+            background: url('https://statics.goorm.io/images/favicon/goormedu/android-icon-192x192.png') no-repeat center;
+            background-size: cover;
+        }
+        .tile-class123 {
+            background: url('https://cdn.class123.kr/assets/img/ico/favicon-196x196.png?v=3') no-repeat center;
+            background-size: cover;
+        }
+        .tile-dinosaur {
+            background: url('https://www.omgchrome.com/wp-content/uploads/2015/06/chrome-trex-dinosaur.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .tile-github {
+            background: url('https://github.com/fluidicon.png') no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<main class="container">
+<div class="row">
+<div class="tile tile-naver"></div>
+<div class="tile tile-google"></div>
+<div class="tile tile-sunrin"></div>
+<div class="tile tile-youtube"></div>
+<div class="tile tile-facebook"></div>
+<div class="tile tile-instagram"></div>
+<div class="tile tile-sunringoorm"></div>
+<div class="tile tile-class123"></div>
+<div class="tile tile-dinosaur"></div>
+<div class="tile tile-github"></div>
+</div>
+</main>
+</body>
+<script>
+   setInterval(function(){ location.reload(); }, 3000);
+</script>
+</html>
